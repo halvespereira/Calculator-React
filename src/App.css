@@ -1,38 +1,122 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: gainsboro;
+}
+
+.outerBox {
+  background-color: darkslategrey;
+  padding: 0px 12px 0px 12px;
+  border: 9px solid black;
+  box-shadow: 15px 15px 20px 0px gray;
+}
+
+p {
+  text-align: end;
+  color: aliceblue;
+  font-size: 29px;
+  margin-bottom: 20px;
+  margin-right: 4px;
+}
+
+#calculation {
+  font-size: 15px;
+  margin-right: 6px;
+ color: lemonchiffon;
+ font-weight: bold;
+ height: 15px;
+}
+
+#display {
+  height: 20px;
+  font-size: 25px;
+  margin-right: 6px;
+  color: lemonchiffon;
+  font-weight: bold;
+}
+
+.smallCalc {
+  height: 20px;
+  font-size: 22px;
+  margin-right: 6px;
   color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+#calculator {
+  width: 342px;
+  height: 390px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#calculator div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#clear, .numbers, .operators, #equals, #zero {
+  border: 1px solid black;
+  cursor: pointer;
+  color: white;
+  margin-right: 4px;
+  font-size: 30px;
+}
+
+#clear:active, .numbers:active, .operators:active, #equals:active, #zero:active {
+  transform: scale(0.98);
+  border: none;
+}
+
+#clear:hover, .numbers:hover, .operators:hover, #equals:hover, #zero:hover {
+  border: 1px solid wheat;
+}
+
+#clear {
+  width: 168px;
+  height: 60px;
+  background-color: darkred;
+}
+
+.operators, .numbers {
+  width: 81px;
+  height: 60px;
+}
+
+.operators {
+  background-color: darkslateblue;
+}
+
+.numbers {
+  background-color: lightslategray;
+}
+
+#equals {
+  width: 82px;
+  height: 151px;
+  background-color: darkblue;
+}
+
+#zero{
+  position: absolute;
+  top: 302px;
+  width: 167px;
+  height: 73px;
+  background-color: lightslategray;
+}
+
+#decimal {
+ position: absolute;
+ top: 302px;
+ left: 171px;
+ height: 73px;
 }
