@@ -16,7 +16,7 @@ class App extends React.Component {
 
   handleChange (e) {
     const { calc, lastPressed } = this.state;
-    const innerText = e.target.name;
+    const innerText = e.target.name
 
     e.preventDefault();
 
